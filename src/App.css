@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600&family=Young+Serif&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rethink Sans', sans-serif;
+}
+
+body{
+  background-color: #fcdcae;
+  background-color: #00000000;
+}
+
+.title{
+  font-family: 'Young Serif', serif;
+  font-size: 40px;
+}
+.truncate-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%; 
+}
+.container {
+  position: relative;
+  width: 100px;
+  height: 40px;
+}
+.checkbox {
+  appearance: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.checkbox:before {
+  content: "Movies";
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: #2d2936;
+  color: #fcdcae;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+
+  font-size: 12px;
+}
+.checkbox:checked:before {
+  content: "TV";
+  left: 35px;
+  color: #89befe;
+}
+.checkbox:checked {
+  background: linear-gradient(135deg, #8175fe, #89befe);
+}
